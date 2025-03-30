@@ -31,6 +31,6 @@ O sistema carrega dados de um arquivo de texto (`antenas.txt`), permite inserç�
 ## Requisitos
 
 - **Compilador C**: GCC ou equivalente (ex.: MinGW para Windows).
-- **Sistema Operacional**: Testado em ambientes compatíveis com C (Linux, Windows, macOS).
+- **Sistema Operacional**: Windows.
 - **Ferramentas**: Visual Studio Code (recomendado) com extensões Git para controlo de versão.
 
