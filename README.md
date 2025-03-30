@@ -35,11 +35,3 @@ O sistema carrega dados de um arquivo de texto (`antenas.txt`), permite inserç�
 - **Sistema Operacional**: Testado em ambientes compatíveis com C (Linux, Windows, macOS).
 - **Ferramentas**: Visual Studio Code (recomendado) com extensões Git para controlo de versão.
 
----
-
-## Como Executar
-
-1. **Clone o Repositório**
-   ```bash
-   git clone https://github.com/seu-usuario/EDA-Fase1.git
-   cd EDA-Fase1
