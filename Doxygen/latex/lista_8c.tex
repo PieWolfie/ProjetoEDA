@@ -1,0 +1,431 @@
+\doxysection{C\+:/\+Users/\+Pedro\+Lourenço\+Morais\+R/\+Desktop/\+Universidade/\+EDA/\+Projeto\+Fase1/lista.c File Reference}
+\hypertarget{lista_8c}{}\label{lista_8c}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/ProjetoFase1/lista.c@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/ProjetoFase1/lista.c}}
+
+
+Implementação das funções para manipulação de listas ligadas e matriz.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}estruturas.\+h"{}}\newline
+{\ttfamily \#include "{}lista.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lista_8c_a45d602813bfa39b2875ba12549e962c5}{criar\+Antena}} (char freq, int x, int y)
+\begin{DoxyCompactList}\small\item\em Cria uma nova antena. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lista_8c_a122b9f2b52f1adfef13e699f0c2e45a3}{criar\+Nefasto}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Cria um novo efeito nefasto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_a585c3a1f1dad7c13549270ce6d36837a}{inserir\+Antena}} (\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lista, char freq, int x, int y)
+\begin{DoxyCompactList}\small\item\em Insere uma antena na lista ligada. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_a9bb4d75d01a766ec2057efe46a3d70b3}{inserir\+Nefasto}} (\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lista, int x, int y)
+\begin{DoxyCompactList}\small\item\em Insere um efeito nefasto na lista ligada. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_ad2b3bc5b87a84cd69b33b025efc28427}{remover\+Antena}} (\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lista, int x, int y)
+\begin{DoxyCompactList}\small\item\em Remove uma antena da lista ligada e liberta a memória. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lista_8c_a35471234683ef7d40cd0de6c1356660f}{carregar\+Antenas}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Carrega as antenas de um ficheiro para uma lista ligada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lista_8c_a79fd399db9519c94601c05922833492e}{detetar\+Efeitos\+Nefastos}} (\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Calcula os efeitos nefastos das antenas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8c_ab4daf968b49d14c5639b57bcec8d5ebc}{imprimir\+Antenas}} (\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Imprime a lista de antenas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8c_a5c4a431732cfa1edd53e5380f36e692b}{imprimir\+Efeitos\+Nefastos}} (\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Imprime a lista de efeitos nefastos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8c_a77484e72dda946869ea899022c71c498}{libertar\+Matriz}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int linhas)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para a matriz. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{lista_8c_ae212239f368d0d6dc56b18fb3b329757}{carregar\+Matriz}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Carrega a matriz de um ficheiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_a8707b8a27cd57c2cb05a5072fbaa262c}{inserir\+Na\+Matriz}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int linhas, int colunas, int x, int y, char c)
+\begin{DoxyCompactList}\small\item\em Insere um caractere numa posição da matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_a9e6419cb7d67969125068034cb99be1e}{remover\+Da\+Matriz}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int linhas, int colunas, int x, int y)
+\begin{DoxyCompactList}\small\item\em Remove um caractere da matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8c_a2ef6c255d66772419bfbd2e3b89b7df0}{limpar\+Matriz}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int linhas, int colunas)
+\begin{DoxyCompactList}\small\item\em Limpa a matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_a504d49ba56f6ed032dab839e8230e478}{atualizar\+Matriz}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int linhas, int colunas, \mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}lista, \mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*}efeitos)
+\begin{DoxyCompactList}\small\item\em Atualiza a matriz com as antenas e os efeitos nefastos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_a46267c3e4103bcdfdab3672ec51f8cb5}{contar\+Linhas}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Conta o número de linhas de um ficheiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lista_8c_adc98073390dd52bac718629e9434431b}{contar\+Colunas}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Conta o número de colunas de um ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8c_a35e4bbf0bbc49e05b029f106feaa057e}{imprimir\+Matriz}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int linhas)
+\begin{DoxyCompactList}\small\item\em Imprime a matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação das funções para manipulação de listas ligadas e matriz. 
+
+\begin{DoxyAuthor}{Author}
+Pedro Rocha 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/03-\/27 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{lista_8c_a504d49ba56f6ed032dab839e8230e478}\index{lista.c@{lista.c}!atualizarMatriz@{atualizarMatriz}}
+\index{atualizarMatriz@{atualizarMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{atualizarMatriz()}{atualizarMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_a504d49ba56f6ed032dab839e8230e478} 
+int atualizar\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz}{, }\item[{int}]{linhas}{, }\item[{int}]{colunas}{, }\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*}}]{efeitos}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza a matriz com as antenas e os efeitos nefastos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Matriz a atualizar. \\
+\hline
+{\em linhas} & Número de linhas da matriz. \\
+\hline
+{\em colunas} & Número de colunas da matriz. \\
+\hline
+{\em lista} & Lista de antenas. \\
+\hline
+{\em efeitos} & Lista de efeitos nefastos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se a matriz foi atualizada com sucesso. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a35471234683ef7d40cd0de6c1356660f}\index{lista.c@{lista.c}!carregarAntenas@{carregarAntenas}}
+\index{carregarAntenas@{carregarAntenas}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{carregarAntenas()}{carregarAntenas()}}
+{\footnotesize\ttfamily \label{lista_8c_a35471234683ef7d40cd0de6c1356660f} 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} carregar\+Antenas (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Carrega as antenas de um ficheiro para uma lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do ficheiro a carregar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Antena\texorpdfstring{$\ast$}{*} Lista de antenas carregada. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_ae212239f368d0d6dc56b18fb3b329757}\index{lista.c@{lista.c}!carregarMatriz@{carregarMatriz}}
+\index{carregarMatriz@{carregarMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{carregarMatriz()}{carregarMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_ae212239f368d0d6dc56b18fb3b329757} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} carregar\+Matriz (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Carrega a matriz de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do ficheiro a carregar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Matriz carregada. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_adc98073390dd52bac718629e9434431b}\index{lista.c@{lista.c}!contarColunas@{contarColunas}}
+\index{contarColunas@{contarColunas}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{contarColunas()}{contarColunas()}}
+{\footnotesize\ttfamily \label{lista_8c_adc98073390dd52bac718629e9434431b} 
+int contar\+Colunas (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Conta o número de colunas de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do ficheiro a contar as colunas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número de colunas do ficheiro. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a46267c3e4103bcdfdab3672ec51f8cb5}\index{lista.c@{lista.c}!contarLinhas@{contarLinhas}}
+\index{contarLinhas@{contarLinhas}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{contarLinhas()}{contarLinhas()}}
+{\footnotesize\ttfamily \label{lista_8c_a46267c3e4103bcdfdab3672ec51f8cb5} 
+int contar\+Linhas (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Conta o número de linhas de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do ficheiro a contar as linhas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número de linhas do ficheiro. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a45d602813bfa39b2875ba12549e962c5}\index{lista.c@{lista.c}!criarAntena@{criarAntena}}
+\index{criarAntena@{criarAntena}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{criarAntena()}{criarAntena()}}
+{\footnotesize\ttfamily \label{lista_8c_a45d602813bfa39b2875ba12549e962c5} 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} criar\+Antena (\begin{DoxyParamCaption}\item[{char}]{freq}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Cria uma nova antena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & Frequência da antena. \\
+\hline
+{\em x} & Coordenada x da antena. \\
+\hline
+{\em y} & Coordenada y da antena. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Antena\texorpdfstring{$\ast$}{*} Apontador para a antena criada. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a122b9f2b52f1adfef13e699f0c2e45a3}\index{lista.c@{lista.c}!criarNefasto@{criarNefasto}}
+\index{criarNefasto@{criarNefasto}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{criarNefasto()}{criarNefasto()}}
+{\footnotesize\ttfamily \label{lista_8c_a122b9f2b52f1adfef13e699f0c2e45a3} 
+\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*} criar\+Nefasto (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Cria um novo efeito nefasto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordenada x do efeito nefasto. \\
+\hline
+{\em y} & Coordenada y do efeito nefasto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nefasto\texorpdfstring{$\ast$}{*} Apontador para o efeito nefasto criado. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a79fd399db9519c94601c05922833492e}\index{lista.c@{lista.c}!detetarEfeitosNefastos@{detetarEfeitosNefastos}}
+\index{detetarEfeitosNefastos@{detetarEfeitosNefastos}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{detetarEfeitosNefastos()}{detetarEfeitosNefastos()}}
+{\footnotesize\ttfamily \label{lista_8c_a79fd399db9519c94601c05922833492e} 
+\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*} detetar\+Efeitos\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+
+
+Calcula os efeitos nefastos das antenas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de antenas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nefasto\texorpdfstring{$\ast$}{*} Lista de efeitos nefastos. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_ab4daf968b49d14c5639b57bcec8d5ebc}\index{lista.c@{lista.c}!imprimirAntenas@{imprimirAntenas}}
+\index{imprimirAntenas@{imprimirAntenas}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{imprimirAntenas()}{imprimirAntenas()}}
+{\footnotesize\ttfamily \label{lista_8c_ab4daf968b49d14c5639b57bcec8d5ebc} 
+void imprimir\+Antenas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+
+
+Imprime a lista de antenas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de antenas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{lista_8c_a5c4a431732cfa1edd53e5380f36e692b}\index{lista.c@{lista.c}!imprimirEfeitosNefastos@{imprimirEfeitosNefastos}}
+\index{imprimirEfeitosNefastos@{imprimirEfeitosNefastos}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{imprimirEfeitosNefastos()}{imprimirEfeitosNefastos()}}
+{\footnotesize\ttfamily \label{lista_8c_a5c4a431732cfa1edd53e5380f36e692b} 
+void imprimir\+Efeitos\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+
+
+Imprime a lista de efeitos nefastos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de efeitos nefastos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{lista_8c_a35e4bbf0bbc49e05b029f106feaa057e}\index{lista.c@{lista.c}!imprimirMatriz@{imprimirMatriz}}
+\index{imprimirMatriz@{imprimirMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{imprimirMatriz()}{imprimirMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_a35e4bbf0bbc49e05b029f106feaa057e} 
+void imprimir\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz}{, }\item[{int}]{linhas}{}\end{DoxyParamCaption})}
+
+
+
+Imprime a matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Matriz a imprimir. \\
+\hline
+{\em linhas} & Número de linhas da matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{lista_8c_a585c3a1f1dad7c13549270ce6d36837a}\index{lista.c@{lista.c}!inserirAntena@{inserirAntena}}
+\index{inserirAntena@{inserirAntena}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{inserirAntena()}{inserirAntena()}}
+{\footnotesize\ttfamily \label{lista_8c_a585c3a1f1dad7c13549270ce6d36837a} 
+int inserir\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{char}]{freq}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Insere uma antena na lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Apontador para a lista de antenas. \\
+\hline
+{\em freq} & Frequência da antena a inserir. \\
+\hline
+{\em x} & Coordenada x da antena a inserir. \\
+\hline
+{\em y} & Coordenada y da antena a inserir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se a antena foi inserida com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a8707b8a27cd57c2cb05a5072fbaa262c}\index{lista.c@{lista.c}!inserirNaMatriz@{inserirNaMatriz}}
+\index{inserirNaMatriz@{inserirNaMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{inserirNaMatriz()}{inserirNaMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_a8707b8a27cd57c2cb05a5072fbaa262c} 
+int inserir\+Na\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz}{, }\item[{int}]{linhas}{, }\item[{int}]{colunas}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Insere um caractere numa posição da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Matriz onde inserir o caractere. \\
+\hline
+{\em linhas} & Número de linhas da matriz. \\
+\hline
+{\em colunas} & Número de colunas da matriz. \\
+\hline
+{\em x} & Coordenada x onde inserir o caractere. \\
+\hline
+{\em y} & Coordenada y onde inserir o caractere. \\
+\hline
+{\em c} & Caractere a inserir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se o caractere foi inserido com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a9bb4d75d01a766ec2057efe46a3d70b3}\index{lista.c@{lista.c}!inserirNefasto@{inserirNefasto}}
+\index{inserirNefasto@{inserirNefasto}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{inserirNefasto()}{inserirNefasto()}}
+{\footnotesize\ttfamily \label{lista_8c_a9bb4d75d01a766ec2057efe46a3d70b3} 
+int inserir\+Nefasto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nefasto}{Nefasto}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Insere um efeito nefasto na lista ligada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Apontador para a lista de efeitos nefastos. \\
+\hline
+{\em x} & Coordenada x do efeito nefasto a inserir. \\
+\hline
+{\em y} & Coordenada y do efeito nefasto a inserir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se o efeito nefasto foi inserido com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a77484e72dda946869ea899022c71c498}\index{lista.c@{lista.c}!libertarMatriz@{libertarMatriz}}
+\index{libertarMatriz@{libertarMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{libertarMatriz()}{libertarMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_a77484e72dda946869ea899022c71c498} 
+void libertar\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz}{, }\item[{int}]{linhas}{}\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para a matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Matriz a libertar. \\
+\hline
+{\em linhas} & Número de linhas da matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{lista_8c_a2ef6c255d66772419bfbd2e3b89b7df0}\index{lista.c@{lista.c}!limparMatriz@{limparMatriz}}
+\index{limparMatriz@{limparMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{limparMatriz()}{limparMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_a2ef6c255d66772419bfbd2e3b89b7df0} 
+void limpar\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz}{, }\item[{int}]{linhas}{, }\item[{int}]{colunas}{}\end{DoxyParamCaption})}
+
+
+
+Limpa a matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Matriz a limpar. \\
+\hline
+{\em linhas} & Número de linhas da matriz. \\
+\hline
+{\em colunas} & Número de colunas da matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{lista_8c_ad2b3bc5b87a84cd69b33b025efc28427}\index{lista.c@{lista.c}!removerAntena@{removerAntena}}
+\index{removerAntena@{removerAntena}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{removerAntena()}{removerAntena()}}
+{\footnotesize\ttfamily \label{lista_8c_ad2b3bc5b87a84cd69b33b025efc28427} 
+int remover\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Remove uma antena da lista ligada e liberta a memória. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Apontador para a lista de antenas. \\
+\hline
+{\em x} & Coordenada x da antena a remover. \\
+\hline
+{\em y} & Coordenada y da antena a remover. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se a antena foi removida com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{lista_8c_a9e6419cb7d67969125068034cb99be1e}\index{lista.c@{lista.c}!removerDaMatriz@{removerDaMatriz}}
+\index{removerDaMatriz@{removerDaMatriz}!lista.c@{lista.c}}
+\doxysubsubsection{\texorpdfstring{removerDaMatriz()}{removerDaMatriz()}}
+{\footnotesize\ttfamily \label{lista_8c_a9e6419cb7d67969125068034cb99be1e} 
+int remover\+Da\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz}{, }\item[{int}]{linhas}{, }\item[{int}]{colunas}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Remove um caractere da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Matriz onde remover o caractere. \\
+\hline
+{\em linhas} & Número de linhas da matriz. \\
+\hline
+{\em colunas} & Número de colunas da matriz. \\
+\hline
+{\em x} & Coordenada x onde remover o caractere. \\
+\hline
+{\em y} & Coordenada y onde remover o caractere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se o caractere foi removido com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
