@@ -1,6 +1,7 @@
 /**
  * @file main.c
- * @author Pedro Rocha
+ * @author Pedro Rocha a23009
+ * @brief IPCA - Projeto de Estruturas de Dados
  * @brief Programa principal para gestão de antenas e detecção de efeitos nefastos
  * @version 1.0
  * @date 2025-03-27

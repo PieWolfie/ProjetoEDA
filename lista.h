@@ -1,6 +1,7 @@
 /**
  * @file lista.h
- * @author Pedro Rocha
+ * @author Pedro Rocha a23009
+ * @brief IPCA - Projeto de Estruturas de Dados
  * @brief Cabeçalhos das funções para manipulação de listas ligadas e matriz
  * @version 1.0
  * @date 2025-03-27

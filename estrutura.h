@@ -1,6 +1,7 @@
 /**
  * @file estrutura.h
- * @author Pedro Rocha
+ * @author Pedro Rocha a23009
+ * @brief IPCA - Projeto de Estruturas de Dados
  * @brief Definição das estruturas de dados utilizadas no projeto.
  * @version 1.0
  * @date 2025-03-27
