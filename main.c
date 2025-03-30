@@ -13,33 +13,58 @@
 #include "lista.h"
 
 /**
+ * @brief Função para inicializar o programa
+ * 
+ * @param ficheiro Nome do ficheiro de entrada
+ * @return Antena* Lista de antenas carregadas
+ */
+Antena* inicializarPrograma(const char* ficheiro) {
+    Antena* lista = carregarAntenas(ficheiro);
+    if (!lista) {
+        fprintf(stderr, "Erro ao carregar antenas.\n");
+        exit(1);
+    }
+    printf("Antenas carregadas:\n");
+    imprimirAntenas(lista);
+    return lista;
+}
+
+/**
+ * @brief Função para carregar e imprimir a matriz inicial
+ * 
+ * @param ficheiro Nome do ficheiro de entrada
+ * @param linhas Ponteiro para armazenar o número de linhas
+ * @param colunas Ponteiro para armazenar o número de colunas
+ * @return char** Matriz carregada
+ */
+char** carregarEImprimirMatriz(const char* ficheiro, int* linhas, int* colunas) {
+    char** matriz = carregarMatriz(ficheiro);
+    if (!matriz) {
+        fprintf(stderr, "Erro ao carregar matriz.\n");
+        exit(1);
+    }
+    *linhas = contarLinhas(ficheiro);
+    *colunas = contarColunas(ficheiro);
+    printf("\nMatriz inicial:\n");
+    imprimirMatriz(matriz, *linhas);
+    return matriz;
+}
+
+/**
  * @brief Função principal do programa
  * 
  * @return int Código de saída do programa
  */
 int main() {
     // Nome do ficheiro de entrada
-    char ficheiro[] = "antenas.txt";
+    const char ficheiro[] = "antenas.txt";
 
-    // Carregar lista de antenas a partir do ficheiro
-    Antena* lista = carregarAntenas(ficheiro);
-    if (!lista) {
-        fprintf(stderr, "Erro ao carregar antenas.\n");
-        return 1;
-    }
-    printf("Antenas carregadas:\n");
-    imprimirAntenas(lista);
+    // Inicializar programa e carregar antenas
+    Antena* lista = inicializarPrograma(ficheiro);
 
-    // Carregar matriz a partir do ficheiro
-    char** matriz = carregarMatriz(ficheiro);
-    if (!matriz) {
-        fprintf(stderr, "Erro ao carregar matriz.\n");
-        return 1;
-    }
-    int linhas = contarLinhas(ficheiro);
-    int colunas = contarColunas(ficheiro);
-    printf("\nMatriz inicial:\n");
-    imprimirMatriz(matriz, linhas);
+    // Carregar e imprimir matriz inicial
+    int linhas, colunas;
+    char** matriz = carregarEImprimirMatriz(ficheiro, &linhas, &colunas);
 
     // Teste de inserção de uma nova antena
     inserirAntena(&lista, 'B', 5, 5);
