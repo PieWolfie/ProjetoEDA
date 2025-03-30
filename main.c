@@ -47,7 +47,7 @@ int main() {
 
     // Detecção de efeitos nefastos
     Nefasto* efeitos = detetarEfeitosNefastos(lista);
-    printf("\nEfeitos nefastos detectados:\n");
+    printf("\nEfeitos nefastos detetados:\n");
     imprimirEfeitosNefastos(efeitos);
 
     // Atualizar a matriz com os efeitos nefastos

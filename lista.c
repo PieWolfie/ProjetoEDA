@@ -22,7 +22,7 @@
 Antena* criarAntena(char freq, int x, int y) {
     Antena* nova = (Antena*)malloc(sizeof(Antena));
     if (!nova) {
-        printf("Erro ao alocar memória!\n");
+        printf("Erro ao alocar memoria!\n");
         return NULL;
     }
     nova->frequencia = freq;
@@ -41,7 +41,7 @@ Antena* criarAntena(char freq, int x, int y) {
 Nefasto* criarNefasto(int x, int y) {
     Nefasto* novo = (Nefasto*)malloc(sizeof(Nefasto));
     if (!novo) {
-        printf("Erro ao alocar memória!\n");
+        printf("Erro ao alocar memoria!\n");
         return NULL;
     }
     novo->x = x;
@@ -159,7 +159,7 @@ Nefasto* detetarEfeitosNefastos(Antena* lista) {
  */
 void imprimirAntenas(Antena* lista) {
     printf("\nLista de Antenas:\n");
-    printf("Frequência | Coordenadas\n");
+    printf("Frequencia | Coordenadas\n");
     printf("------------------------\n");
     while (lista) {
         printf("    %c      | (X:%d, Y:%d)\n", lista->frequencia, lista->x, lista->y);
@@ -206,14 +206,14 @@ char** carregarMatriz(const char* filename) {
     FILE* file = fopen(filename, "r");
     char **matriz = (char **)malloc(linhas * sizeof(char *));
     if (matriz == NULL) {
-        printf("Erro ao alocar memória!\n");
+        printf("Erro ao alocar memoria!\n");
         fclose(file);
         return NULL;
     }
     for (int i = 0; i < linhas; i++) {
         matriz[i] = (char *)malloc((colunas + 1) * sizeof(char)); // +1 para '\0'
         if (matriz[i] == NULL) {
-            printf("Erro ao alocar memória!\n");
+            printf("Erro ao alocar memoria!\n");
             fclose(file);
             return NULL ;
         }
@@ -338,7 +338,7 @@ int contarColunas(const char* filename) {
  * @param linhas Número de linhas da matriz.
  */
 void imprimirMatriz(char** matriz, int linhas) {
-    printf("\n   MATRIZ\n");
+    printf("\n  MATRIZ\n");
     printf(" ----------\n\n");
     for (int i = 0; i < linhas; i++) {
         printf("%s\n", matriz[i]);
