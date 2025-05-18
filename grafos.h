@@ -16,33 +16,33 @@
  * @brief Estrutura de aresta do grafo
  */
 typedef struct Aresta {
-    struct Vertice* destino; /**< Vértice de destino */
-    struct Aresta* prox;     /**< Próxima aresta */
+    struct Vertice* destino; 
+    struct Aresta* prox;     
 } Aresta;
 
 /**
  * @brief Estrutura de vértice do grafo
  */
 typedef struct Vertice {
-    char freq;           /**< Frequência da antena */
-    int x, y;            /**< Coordenadas da antena */
-    Aresta* arestas;     /**< Lista de arestas ligadas */
-    struct Vertice* prox;/**< Próximo vértice */
+    char freq;           
+    int x, y;            
+    Aresta* arestas;     
+    struct Vertice* prox;
 } Vertice;
 
 /**
  * @brief Estrutura principal do grafo
  */
 typedef struct Grafo {
-    Vertice* vertices; /**< Lista de vértices */
+    Vertice* vertices; 
 } Grafo;
 
 /**
  * @brief Lista de caminhos possíveis (cada nó contém uma lista de antenas)
  */
 typedef struct Caminho {
-    Antena* lista;           /**< Caminho representado por lista de antenas */
-    struct Caminho* prox;    /**< Próximo caminho */
+    Antena* lista;           
+    struct Caminho* prox;    
 } Caminho;
 
 /**
