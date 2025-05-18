@@ -1,49 +1,49 @@
 \doxysection{lista.\+h}
-\hypertarget{lista_8h_source}{}\label{lista_8h_source}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/ProjetoFase1/lista.h@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/ProjetoFase1/lista.h}}
+\hypertarget{lista_8h_source}{}\label{lista_8h_source}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/lista.h@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/lista.h}}
 \mbox{\hyperlink{lista_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{estrutura_8h}{estrutura.h}}"{}}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ MAX\_LINHAS\ 100}}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ MAX\_COLUNAS\ 100}}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00029\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{lista_8h_a45d602813bfa39b2875ba12549e962c5}{criarAntena}}(\textcolor{keywordtype}{char}\ freq,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00038\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{lista_8h_a122b9f2b52f1adfef13e699f0c2e45a3}{criarNefasto}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00049\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a585c3a1f1dad7c13549270ce6d36837a}{inserirAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}**\ lista,\ \textcolor{keywordtype}{char}\ freq,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00059\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a9bb4d75d01a766ec2057efe46a3d70b3}{inserirNefasto}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}**\ lista,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00069\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_ad2b3bc5b87a84cd69b33b025efc28427}{removerAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}**\ lista,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00077\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{lista_8h_a35471234683ef7d40cd0de6c1356660f}{carregarAntenas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00085\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{lista_8h_a79fd399db9519c94601c05922833492e}{detetarEfeitosNefastos}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00092\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_ab4daf968b49d14c5639b57bcec8d5ebc}{imprimirAntenas}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00099\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a5c4a431732cfa1edd53e5380f36e692b}{imprimirEfeitosNefastos}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ lista);}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00107\ \textcolor{keywordtype}{char}**\ \mbox{\hyperlink{lista_8h_ae212239f368d0d6dc56b18fb3b329757}{carregarMatriz}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
-\DoxyCodeLine{00108\ }
-\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a77484e72dda946869ea899022c71c498}{libertarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00128\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a8707b8a27cd57c2cb05a5072fbaa262c}{inserirNaMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ c);}
-\DoxyCodeLine{00129\ }
-\DoxyCodeLine{00140\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a9e6419cb7d67969125068034cb99be1e}{removerDaMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00141\ }
-\DoxyCodeLine{00149\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a2ef6c255d66772419bfbd2e3b89b7df0}{limparMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas);}
-\DoxyCodeLine{00150\ }
-\DoxyCodeLine{00161\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a504d49ba56f6ed032dab839e8230e478}{atualizarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ lista,\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ efeitos);}
-\DoxyCodeLine{00162\ }
-\DoxyCodeLine{00169\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a35e4bbf0bbc49e05b029f106feaa057e}{imprimirMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
-\DoxyCodeLine{00170\ }
-\DoxyCodeLine{00177\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a46267c3e4103bcdfdab3672ec51f8cb5}{contarLinhas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
-\DoxyCodeLine{00178\ }
-\DoxyCodeLine{00185\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_adc98073390dd52bac718629e9434431b}{contarColunas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{estrutura_8h}{estrutura.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ MAX\_LINHAS\ 100}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ MAX\_COLUNAS\ 100}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00030\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{lista_8h_a45d602813bfa39b2875ba12549e962c5}{criarAntena}}(\textcolor{keywordtype}{char}\ freq,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00039\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{lista_8h_a122b9f2b52f1adfef13e699f0c2e45a3}{criarNefasto}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a585c3a1f1dad7c13549270ce6d36837a}{inserirAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}**\ lista,\ \textcolor{keywordtype}{char}\ freq,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a9bb4d75d01a766ec2057efe46a3d70b3}{inserirNefasto}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}**\ lista,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_ad2b3bc5b87a84cd69b33b025efc28427}{removerAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}**\ lista,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{lista_8h_a35471234683ef7d40cd0de6c1356660f}{carregarAntenas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{lista_8h_a79fd399db9519c94601c05922833492e}{detetarEfeitosNefastos}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_ab4daf968b49d14c5639b57bcec8d5ebc}{imprimirAntenas}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a5c4a431732cfa1edd53e5380f36e692b}{imprimirEfeitosNefastos}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ lista);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \textcolor{keywordtype}{char}**\ \mbox{\hyperlink{lista_8h_ae212239f368d0d6dc56b18fb3b329757}{carregarMatriz}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a77484e72dda946869ea899022c71c498}{libertarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00129\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a8707b8a27cd57c2cb05a5072fbaa262c}{inserirNaMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a9e6419cb7d67969125068034cb99be1e}{removerDaMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a2ef6c255d66772419bfbd2e3b89b7df0}{limparMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00162\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a504d49ba56f6ed032dab839e8230e478}{atualizarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ lista,\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ efeitos);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00170\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a35e4bbf0bbc49e05b029f106feaa057e}{imprimirMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00178\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a46267c3e4103bcdfdab3672ec51f8cb5}{contarLinhas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00186\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_adc98073390dd52bac718629e9434431b}{contarColunas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
 
 \end{DoxyCode}

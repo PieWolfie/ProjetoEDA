@@ -1,0 +1,46 @@
+\doxysection{grafos.\+h}
+\hypertarget{grafos_8h_source}{}\label{grafos_8h_source}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/grafos.h@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/grafos.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ GRAFO\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ GRAFO\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{estrutura_8h}{estrutura.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_aresta}{Aresta}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{struct_aresta_a15f4b2f6a01fe524e7c3c7a1937eb679}{destino}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_aresta}{Aresta}}*\ \mbox{\hyperlink{struct_aresta_a9a0dbe60945590437bb155b64632f411}{prox}};\ \ \ \ \ }
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{struct_aresta}{Aresta}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice}{Vertice}}\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_vertice_a5a1bed92739e4b23e57b497c710e48bf}{freq}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ \mbox{\hyperlink{struct_vertice_ae9aae69725a37b059383c13ccd43a95e}{y}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{struct_aresta}{Aresta}}*\ \mbox{\hyperlink{struct_vertice_adedef9ffb6a2e66fdebbe25299bec5d3}{arestas}};\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{struct_vertice_af23ae50f1a9230531a4f4507eb457a4e}{prox}};}
+\DoxyCodeLine{00031\ \}\ \mbox{\hyperlink{struct_vertice}{Vertice}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_grafo}{Grafo}}\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{struct_grafo_adddda2675dcd296ad6ab02fbbd1fd797}{vertices}};\ }
+\DoxyCodeLine{00038\ \}\ \mbox{\hyperlink{struct_grafo}{Grafo}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_caminho}{Caminho}}\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{struct_caminho_ac29b8b2b4d37b1a7afaa3843a8ba7d08}{lista}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_caminho}{Caminho}}*\ \mbox{\hyperlink{struct_caminho_a85e5891cda2c69e967b81c8f7bb69996}{prox}};\ \ \ \ }
+\DoxyCodeLine{00046\ \}\ \mbox{\hyperlink{struct_caminho}{Caminho}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ construirGrafo(\mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{struct_caminho_ac29b8b2b4d37b1a7afaa3843a8ba7d08}{lista}});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00062\ \mbox{\hyperlink{struct_antena}{Antena}}*\ dfs(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00071\ \mbox{\hyperlink{struct_antena}{Antena}}*\ bfs(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00080\ \mbox{\hyperlink{struct_antena}{Antena}}*\ intersecoes(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}\ f1,\ \textcolor{keywordtype}{char}\ f2);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00091\ \mbox{\hyperlink{struct_caminho}{Caminho}}*\ caminhosEntre(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y1,\ \textcolor{keywordtype}{int}\ x2,\ \textcolor{keywordtype}{int}\ y2);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GRAFO\_H}}
+\DoxyCodeLine{00094\ }
+
+\end{DoxyCode}

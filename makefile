@@ -1,14 +1,14 @@
 # Detecta o sistema operacional
 ifdef OS
-    EXEC = main.exe
+    EXEC = projeto.exe
 else
-    EXEC = main
+    EXEC = projeto
 endif
 
 # Variáveis
 CC = gcc
 CFLAGS = -Wall -Wextra -g
-OBJ = main.o lista.o
+OBJ = main.o lista.o grafos.o
 
 # Regra principal
 all: $(EXEC)
@@ -18,11 +18,14 @@ $(EXEC): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(EXEC)
 
 # Regras para compilar os arquivos .c em .o
-main.o: main.c estruturas.h lista.h
+main.o: main.c estrutura.h lista.h grafos.h
 	$(CC) $(CFLAGS) -c main.c -o main.o
 
-lista.o: lista.c lista.h estruturas.h
+lista.o: lista.c lista.h estrutura.h
 	$(CC) $(CFLAGS) -c lista.c -o lista.o
+
+grafos.o: grafos.c grafos.h estrutura.h
+	$(CC) $(CFLAGS) -c grafos.c -o grafos.o
 
 # Limpeza dos arquivos compilados
 clean:

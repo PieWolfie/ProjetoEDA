@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['removerantena_0',['removerAntena',['../lista_8c.html#ad2b3bc5b87a84cd69b33b025efc28427',1,'removerAntena(Antena **lista, int x, int y):&#160;lista.c'],['../lista_8h.html#ad2b3bc5b87a84cd69b33b025efc28427',1,'removerAntena(Antena **lista, int x, int y):&#160;lista.c']]],
-  ['removerdamatriz_1',['removerDaMatriz',['../lista_8c.html#a9e6419cb7d67969125068034cb99be1e',1,'removerDaMatriz(char **matriz, int linhas, int colunas, int x, int y):&#160;lista.c'],['../lista_8h.html#a9e6419cb7d67969125068034cb99be1e',1,'removerDaMatriz(char **matriz, int linhas, int colunas, int x, int y):&#160;lista.c']]]
+  ['main_0',['main',['../main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
+  ['max_5fcolunas_2',['MAX_COLUNAS',['../lista_8h.html#ad624bf76d9366faecf9041ef6ffffcb9',1,'lista.h']]],
+  ['max_5flinhas_3',['MAX_LINHAS',['../lista_8h.html#ab44f6d43935e7b204b295865fc8c1edc',1,'lista.h']]]
 ];

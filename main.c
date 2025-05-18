@@ -2,103 +2,59 @@
  * @file main.c
  * @author Pedro Rocha a23009
  * @brief IPCA - Projeto de Estruturas de Dados
- * @brief Programa principal para gestão de antenas e detecção de efeitos nefastos
- * @version 1.0
- * @date 2025-03-27
+ * @brief Programa principal para análise de grafos entre antenas (Fase 2)
+ * @version 2.0
+ * @date 2025-05-13
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "estrutura.h"
 #include "lista.h"
+#include "grafos.h"
 
 /**
- * @brief Função para inicializar o programa
+ * @brief Função principal do programa para executar as operações da Fase 2.
  * 
- * @param ficheiro Nome do ficheiro de entrada
- * @return Antena* Lista de antenas carregadas
- */
-Antena* inicializarPrograma(const char* ficheiro) {
-    Antena* lista = carregarAntenas(ficheiro);
-    if (!lista) {
-        fprintf(stderr, "Erro ao carregar antenas.\n");
-        exit(1);
-    }
-    printf("Antenas carregadas:\n");
-    imprimirAntenas(lista);
-    return lista;
-}
-
-/**
- * @brief Função para carregar e imprimir a matriz inicial
- * 
- * @param ficheiro Nome do ficheiro de entrada
- * @param linhas Ponteiro para armazenar o número de linhas
- * @param colunas Ponteiro para armazenar o número de colunas
- * @return char** Matriz carregada
- */
-char** carregarEImprimirMatriz(const char* ficheiro, int* linhas, int* colunas) {
-    char** matriz = carregarMatriz(ficheiro);
-    if (!matriz) {
-        fprintf(stderr, "Erro ao carregar matriz.\n");
-        exit(1);
-    }
-    *linhas = contarLinhas(ficheiro);
-    *colunas = contarColunas(ficheiro);
-    printf("\nMatriz inicial:\n");
-    imprimirMatriz(matriz, *linhas);
-    return matriz;
-}
-
-/**
- * @brief Função principal do programa
+ * - Constrói um grafo com base nas antenas carregadas.
+ * - Executa procura em profundidade (DFS) e largura (BFS).
+ * - Identifica todos os caminhos possíveis entre duas antenas.
+ * - Procura interseções entre antenas de frequências distintas.
  * 
  * @return int Código de saída do programa
  */
 int main() {
-    // Nome do ficheiro de entrada
-    const char ficheiro[] = "antenas.txt";
-
-    // Inicializar programa e carregar antenas
-    Antena* lista = inicializarPrograma(ficheiro);
-
-    // Carregar e imprimir matriz inicial
-    int linhas, colunas;
-    char** matriz = carregarEImprimirMatriz(ficheiro, &linhas, &colunas);
-
-    // Teste de inserção de uma nova antena
-    inserirAntena(&lista, 'B', 5, 5);
-    printf("\nApos insercao de antena:\n");
+    // Carregar antenas da fase 1
+    Antena* lista = carregarAntenas("antenas.txt");
+    printf("Antenas carregadas da Fase 1:\n");
     imprimirAntenas(lista);
 
-    // Detecção de efeitos nefastos
-    Nefasto* efeitos = detetarEfeitosNefastos(lista);
-    printf("\nEfeitos nefastos detetados:\n");
-    imprimirEfeitosNefastos(efeitos);
+    // Construir grafo a partir da lista de antenas
+    Grafo* g = construirGrafo(lista);
 
-    // Atualizar a matriz com os efeitos nefastos
-    atualizarMatriz(matriz, linhas, colunas, lista, efeitos);
-    printf("\nMatriz apos atualizacao:\n");
-    imprimirMatriz(matriz, linhas);
+    // Fase 2 - a) DFS a partir de uma antena
+    printf("\n[FASE 2 - a] DFS a partir da antena em (6,5):\n");
+    Antena* resDFS = dfs(g, 6, 5);
+    imprimirAntenas(resDFS);
 
-    // Teste de remoção de antenas
-    removerAntena(&lista, 5, 5);
-    removerAntena(&lista, 6, 5);
-    printf("\nApos remocao de antenas:\n");
-    imprimirAntenas(lista);
+    // Fase 2 - b) BFS a partir de uma antena
+    printf("\n[FASE 2 - b] BFS a partir da antena em (6,5):\n");
+    Antena* resBFS = bfs(g, 6, 5);
+    imprimirAntenas(resBFS);
 
-    // Recalcular efeitos nefastos após remoção
-    efeitos = detetarEfeitosNefastos(lista);
-    printf("\nEfeitos nefastos apos remocao:\n");
-    imprimirEfeitosNefastos(efeitos);
+    // Fase 2 - c) Todos os caminhos possíveis entre duas antenas
+    printf("\n[FASE 2 - c] Caminhos entre antenas em (6,5) e (9,9):\n");
+    Caminho* caminhos = caminhosEntre(g, 6, 5, 9, 9);
+    int contador = 1;
+    for (Caminho* c = caminhos; c; c = c->prox) {
+        printf("Caminho %d:\n", contador++);
+        imprimirAntenas(c->lista);
+    }
 
-    // Atualizar a matriz novamente
-    atualizarMatriz(matriz, linhas, colunas, lista, efeitos);
-    printf("\nMatriz final:\n");
-    imprimirMatriz(matriz, linhas);
-
-    // Libertar memória alocada para a matriz
-    libertarMatriz(matriz, linhas);
+    // Fase 2 - d) Interseções entre antenas com frequências diferentes 'A' e '0'
+    printf("\n[FASE 2 - d] Intersecoes entre antenas 'A' e '0':\n");
+    Antena* inter = intersecoes(g, 'A', '0');
+    imprimirAntenas(inter);
 
     return 0;
 }
