@@ -158,7 +158,7 @@ Nefasto* detetarEfeitosNefastos(Antena* lista) {
  * @brief Imprime a lista de antenas.
  * @param lista Lista de antenas.
  */
-void imprimirAntenas(Antena* lista) {
+int imprimirAntenas(Antena* lista) {
     printf("\nLista de Antenas:\n");
     printf("Frequencia | Coordenadas\n");
     printf("------------------------\n");
@@ -167,13 +167,14 @@ void imprimirAntenas(Antena* lista) {
         lista = lista->prox;
     }
     printf("------------------------\n");
+    return 1;
 }
 
 /**
  * @brief Imprime a lista de efeitos nefastos.
  * @param lista Lista de efeitos nefastos.
  */
-void imprimirEfeitosNefastos(Nefasto* lista) {
+int imprimirEfeitosNefastos(Nefasto* lista) {
     printf("\nEfeitos Nefastos:\n");
     printf("Coordenadas\n");
     printf("------------\n");
@@ -182,6 +183,7 @@ void imprimirEfeitosNefastos(Nefasto* lista) {
         lista = lista->prox;
     }
     printf("------------\n");
+    return 1;
 }
 
 /**
@@ -189,11 +191,13 @@ void imprimirEfeitosNefastos(Nefasto* lista) {
  * @param matriz Matriz a libertar.
  * @param linhas Número de linhas da matriz.
  */
-void libertarMatriz(char** matriz, int linhas) {
+int libertarMatriz(char** matriz, int linhas) {
+    if (!matriz) return 0;
     for (int i = 0; i < linhas; i++) {
         free(matriz[i]);
     }
     free(matriz);
+    return 1;
 }
 
 /**
@@ -262,13 +266,16 @@ int removerDaMatriz(char** matriz, int linhas, int colunas, int x, int y) {
  * @param matriz Matriz a limpar.
  * @param linhas Número de linhas da matriz.
  * @param colunas Número de colunas da matriz.
+ * @return int 1 se a matriz foi limpa com sucesso.
  */
-void limparMatriz(char** matriz, int linhas, int colunas) {
+int limparMatriz(char** matriz, int linhas, int colunas) {
+    if (!matriz) return 0;
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
             matriz[i][j] = '.';
         }
     }
+    return 1;
 }
 
 /**
