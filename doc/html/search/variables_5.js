@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertices_0',['vertices',['../struct_grafo.html#adddda2675dcd296ad6ab02fbbd1fd797',1,'Grafo']]]
+  ['resultado_0',['resultado',['../struct_dfs_context.html#a1487b84afaf2f6ba5eb3807cfec1cba6',1,'DfsContext']]]
 ];

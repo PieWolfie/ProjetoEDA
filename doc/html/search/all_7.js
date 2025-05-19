@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['libertarmatriz_0',['libertarMatriz',['../lista_8c.html#a77484e72dda946869ea899022c71c498',1,'libertarMatriz(char **matriz, int linhas):&#160;lista.c'],['../lista_8h.html#a77484e72dda946869ea899022c71c498',1,'libertarMatriz(char **matriz, int linhas):&#160;lista.c']]],
-  ['limparmatriz_1',['limparMatriz',['../lista_8c.html#a2ef6c255d66772419bfbd2e3b89b7df0',1,'limparMatriz(char **matriz, int linhas, int colunas):&#160;lista.c'],['../lista_8h.html#a2ef6c255d66772419bfbd2e3b89b7df0',1,'limparMatriz(char **matriz, int linhas, int colunas):&#160;lista.c']]],
-  ['lista_2',['lista',['../struct_caminho.html#ac29b8b2b4d37b1a7afaa3843a8ba7d08',1,'Caminho']]],
-  ['lista_2ec_3',['lista.c',['../lista_8c.html',1,'']]],
-  ['lista_2eh_4',['lista.h',['../lista_8h.html',1,'']]]
+  ['imprimirantenas_0',['imprimirAntenas',['../lista_8c.html#ab81cb3d34b1e0b5ea40d4cecc818b715',1,'imprimirAntenas(Antena *lista):&#160;lista.c'],['../lista_8h.html#ab81cb3d34b1e0b5ea40d4cecc818b715',1,'imprimirAntenas(Antena *lista):&#160;lista.c']]],
+  ['imprimirefeitosnefastos_1',['imprimirEfeitosNefastos',['../lista_8c.html#ab4d3c271f7c6ca0cf1b21f63d597504e',1,'imprimirEfeitosNefastos(Nefasto *lista):&#160;lista.c'],['../lista_8h.html#ab4d3c271f7c6ca0cf1b21f63d597504e',1,'imprimirEfeitosNefastos(Nefasto *lista):&#160;lista.c']]],
+  ['imprimirmatriz_2',['imprimirMatriz',['../lista_8c.html#aabb6f52e8be061137ae11c7e2eaf50c8',1,'imprimirMatriz(char **matriz, int linhas):&#160;lista.c'],['../lista_8h.html#aabb6f52e8be061137ae11c7e2eaf50c8',1,'imprimirMatriz(char **matriz, int linhas):&#160;lista.c']]],
+  ['inserirantena_3',['inserirAntena',['../lista_8c.html#a585c3a1f1dad7c13549270ce6d36837a',1,'inserirAntena(Antena **lista, char freq, int x, int y):&#160;lista.c'],['../lista_8h.html#a585c3a1f1dad7c13549270ce6d36837a',1,'inserirAntena(Antena **lista, char freq, int x, int y):&#160;lista.c']]],
+  ['inserirnamatriz_4',['inserirNaMatriz',['../lista_8c.html#a8707b8a27cd57c2cb05a5072fbaa262c',1,'inserirNaMatriz(char **matriz, int linhas, int colunas, int x, int y, char c):&#160;lista.c'],['../lista_8h.html#a8707b8a27cd57c2cb05a5072fbaa262c',1,'inserirNaMatriz(char **matriz, int linhas, int colunas, int x, int y, char c):&#160;lista.c']]],
+  ['inserirnefasto_5',['inserirNefasto',['../lista_8c.html#a9bb4d75d01a766ec2057efe46a3d70b3',1,'inserirNefasto(Nefasto **lista, int x, int y):&#160;lista.c'],['../lista_8h.html#a9bb4d75d01a766ec2057efe46a3d70b3',1,'inserirNefasto(Nefasto **lista, int x, int y):&#160;lista.c']]],
+  ['intersecoes_6',['intersecoes',['../grafos_8c.html#ada71651636a5760b3fa47ae0cfd03464',1,'intersecoes(Grafo *g, char f1, char f2):&#160;grafos.c'],['../grafos_8h.html#ada71651636a5760b3fa47ae0cfd03464',1,'intersecoes(Grafo *g, char f1, char f2):&#160;grafos.c']]]
 ];

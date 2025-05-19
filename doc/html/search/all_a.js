@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['prox_0',['prox',['../struct_aresta.html#a9a0dbe60945590437bb155b64632f411',1,'Aresta::prox'],['../struct_vertice.html#af23ae50f1a9230531a4f4507eb457a4e',1,'Vertice::prox'],['../struct_caminho.html#a85e5891cda2c69e967b81c8f7bb69996',1,'Caminho::prox']]]
+  ['nefasto_0',['Nefasto',['../struct_nefasto.html',1,'Nefasto'],['../estrutura_8h.html#ae690a2a29c460c7055653d2f38d277d4',1,'Nefasto:&#160;estrutura.h']]],
+  ['nofila_1',['NoFila',['../struct_no_fila.html',1,'NoFila'],['../grafos_8c.html#a6956cc63aaf758a5ad4aa6780a52cf88',1,'NoFila:&#160;grafos.c']]]
 ];

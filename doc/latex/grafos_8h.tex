@@ -1,0 +1,219 @@
+\doxysection{C\+:/\+Users/\+Pedro\+Lourenço\+Morais\+R/\+Desktop/\+Universidade/\+EDA/\+Projeto\+\_\+\+EDA\+\_\+23009\+\_\+\+Fase2/src/grafos.h File Reference}
+\hypertarget{grafos_8h}{}\label{grafos_8h}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/src/grafos.h@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/src/grafos.h}}
+{\ttfamily \#include "{}estrutura.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_aresta}{Aresta}}
+\begin{DoxyCompactList}\small\item\em Estrutura de aresta do grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_vertice}{Vertice}}
+\begin{DoxyCompactList}\small\item\em Estrutura de vértice do grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_grafo}{Grafo}}
+\begin{DoxyCompactList}\small\item\em Estrutura principal do grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_caminho}{Caminho}}
+\begin{DoxyCompactList}\small\item\em Lista de caminhos possíveis (cada nó contém uma lista de antenas) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct Aresta \mbox{\hyperlink{grafos_8h_a4dfeea32aaaf68604a93805ab84f33e1}{Aresta}}
+\begin{DoxyCompactList}\small\item\em Estrutura de aresta do grafo. \end{DoxyCompactList}\item 
+typedef struct Vertice \mbox{\hyperlink{grafos_8h_a901d403606dfb55e6d42b899c05d3347}{Vertice}}
+\begin{DoxyCompactList}\small\item\em Estrutura de vértice do grafo. \end{DoxyCompactList}\item 
+typedef struct Grafo \mbox{\hyperlink{grafos_8h_adab04f64457aac52a13e71e40915bd43}{Grafo}}
+\begin{DoxyCompactList}\small\item\em Estrutura principal do grafo. \end{DoxyCompactList}\item 
+typedef struct Caminho \mbox{\hyperlink{grafos_8h_a3f0cb4117cdc19cde5f8f63fdab01c20}{Caminho}}
+\begin{DoxyCompactList}\small\item\em Lista de caminhos possíveis (cada nó contém uma lista de antenas) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafos_8h_a21373eaa6983fefda9863ec34537adf9}{construir\+Grafo}} (\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Constrói um grafo a partir da lista de antenas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafos_8h_aaef1940288b3b666efad576fb989066d}{dfs}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Executa busca em profundidade (DFS) a partir de uma antena. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafos_8h_ab803c363a5c69e41b2ebbc30f38048ae}{bfs}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Executa busca em largura (BFS) a partir de uma antena. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafos_8h_ada71651636a5760b3fa47ae0cfd03464}{intersecoes}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, char f1, char f2)
+\begin{DoxyCompactList}\small\item\em Identifica interseções de antenas com frequências diferentes nas mesmas coordenadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_caminho}{Caminho}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{grafos_8h_afeb5ff2206c23b6cef82b66ed836fd6b}{caminhos\+Entre}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Retorna todos os caminhos possíveis entre duas antenas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{grafos_8h_a4dfeea32aaaf68604a93805ab84f33e1}\index{grafos.h@{grafos.h}!Aresta@{Aresta}}
+\index{Aresta@{Aresta}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{Aresta}{Aresta}}
+{\footnotesize\ttfamily \label{grafos_8h_a4dfeea32aaaf68604a93805ab84f33e1} 
+typedef struct Aresta Aresta}
+
+
+
+Estrutura de aresta do grafo. 
+
+\Hypertarget{grafos_8h_a3f0cb4117cdc19cde5f8f63fdab01c20}\index{grafos.h@{grafos.h}!Caminho@{Caminho}}
+\index{Caminho@{Caminho}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{Caminho}{Caminho}}
+{\footnotesize\ttfamily \label{grafos_8h_a3f0cb4117cdc19cde5f8f63fdab01c20} 
+typedef struct Caminho Caminho}
+
+
+
+Lista de caminhos possíveis (cada nó contém uma lista de antenas) 
+
+\Hypertarget{grafos_8h_adab04f64457aac52a13e71e40915bd43}\index{grafos.h@{grafos.h}!Grafo@{Grafo}}
+\index{Grafo@{Grafo}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{Grafo}{Grafo}}
+{\footnotesize\ttfamily \label{grafos_8h_adab04f64457aac52a13e71e40915bd43} 
+typedef struct Grafo Grafo}
+
+
+
+Estrutura principal do grafo. 
+
+\Hypertarget{grafos_8h_a901d403606dfb55e6d42b899c05d3347}\index{grafos.h@{grafos.h}!Vertice@{Vertice}}
+\index{Vertice@{Vertice}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{Vertice}{Vertice}}
+{\footnotesize\ttfamily \label{grafos_8h_a901d403606dfb55e6d42b899c05d3347} 
+typedef struct Vertice Vertice}
+
+
+
+Estrutura de vértice do grafo. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{grafos_8h_ab803c363a5c69e41b2ebbc30f38048ae}\index{grafos.h@{grafos.h}!bfs@{bfs}}
+\index{bfs@{bfs}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily \label{grafos_8h_ab803c363a5c69e41b2ebbc30f38048ae} 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} bfs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Executa busca em largura (BFS) a partir de uma antena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \doxylink{struct_grafo}{Grafo} \\
+\hline
+{\em x} & Coordenada x da antena \\
+\hline
+{\em y} & Coordenada y da antena \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista ligada de antenas visitadas
+\end{DoxyReturn}
+Executa busca em largura (BFS) a partir de uma antena. \Hypertarget{grafos_8h_afeb5ff2206c23b6cef82b66ed836fd6b}\index{grafos.h@{grafos.h}!caminhosEntre@{caminhosEntre}}
+\index{caminhosEntre@{caminhosEntre}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{caminhosEntre()}{caminhosEntre()}}
+{\footnotesize\ttfamily \label{grafos_8h_afeb5ff2206c23b6cef82b66ed836fd6b} 
+\mbox{\hyperlink{struct_caminho}{Caminho}} \texorpdfstring{$\ast$}{*} caminhos\+Entre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{}\end{DoxyParamCaption})}
+
+
+
+Retorna todos os caminhos possíveis entre duas antenas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \doxylink{struct_grafo}{Grafo} \\
+\hline
+{\em x1} & Coordenada x da antena origem \\
+\hline
+{\em y1} & Coordenada y da antena origem \\
+\hline
+{\em x2} & Coordenada x da antena destino \\
+\hline
+{\em y2} & Coordenada y da antena destino \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de caminhos (cada caminho é uma lista de antenas)
+\end{DoxyReturn}
+Retorna todos os caminhos possíveis entre duas antenas. \Hypertarget{grafos_8h_a21373eaa6983fefda9863ec34537adf9}\index{grafos.h@{grafos.h}!construirGrafo@{construirGrafo}}
+\index{construirGrafo@{construirGrafo}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{construirGrafo()}{construirGrafo()}}
+{\footnotesize\ttfamily \label{grafos_8h_a21373eaa6983fefda9863ec34537adf9} 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} construir\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+
+
+Constrói um grafo a partir da lista de antenas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista ligada de antenas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para grafo criado
+\end{DoxyReturn}
+Constrói um grafo a partir da lista de antenas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista ligada de antenas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo criado 
+\end{DoxyReturn}
+\Hypertarget{grafos_8h_aaef1940288b3b666efad576fb989066d}\index{grafos.h@{grafos.h}!dfs@{dfs}}
+\index{dfs@{dfs}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}}
+{\footnotesize\ttfamily \label{grafos_8h_aaef1940288b3b666efad576fb989066d} 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} dfs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Executa busca em profundidade (DFS) a partir de uma antena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \doxylink{struct_grafo}{Grafo} \\
+\hline
+{\em x} & Coordenada x da antena \\
+\hline
+{\em y} & Coordenada y da antena \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista ligada de antenas visitadas
+\end{DoxyReturn}
+Executa busca em profundidade (DFS) a partir de uma antena.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \doxylink{struct_grafo}{Grafo} \\
+\hline
+{\em x} & Coordenada x da antena inicial \\
+\hline
+{\em y} & Coordenada y da antena inicial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista ligada de antenas visitadas 
+\end{DoxyReturn}
+\Hypertarget{grafos_8h_ada71651636a5760b3fa47ae0cfd03464}\index{grafos.h@{grafos.h}!intersecoes@{intersecoes}}
+\index{intersecoes@{intersecoes}!grafos.h@{grafos.h}}
+\doxysubsubsection{\texorpdfstring{intersecoes()}{intersecoes()}}
+{\footnotesize\ttfamily \label{grafos_8h_ada71651636a5760b3fa47ae0cfd03464} 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} intersecoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g}{, }\item[{char}]{f1}{, }\item[{char}]{f2}{}\end{DoxyParamCaption})}
+
+
+
+Identifica interseções de antenas com frequências diferentes nas mesmas coordenadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \doxylink{struct_grafo}{Grafo} \\
+\hline
+{\em f1} & Primeira frequência \\
+\hline
+{\em f2} & Segunda frequência \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de antenas com interseções
+\end{DoxyReturn}
+Identifica interseções de antenas com frequências diferentes nas mesmas coordenadas. 

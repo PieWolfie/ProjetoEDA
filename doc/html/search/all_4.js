@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['freq_0',['freq',['../struct_vertice.html#a5a1bed92739e4b23e57b497c710e48bf',1,'Vertice']]]
+  ['estrutura_20do_20repositório_0',['Estrutura do Repositório',['../C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto_EDA_23009_Fase2/src/README.md#autotoc_md3',1,'']]],
+  ['estrutura_2eh_1',['estrutura.h',['../estrutura_8h.html',1,'']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]],
-  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
-  ['max_5fcolunas_2',['MAX_COLUNAS',['../lista_8h.html#ad624bf76d9366faecf9041ef6ffffcb9',1,'lista.h']]],
-  ['max_5flinhas_3',['MAX_LINHAS',['../lista_8h.html#ab44f6d43935e7b204b295865fc8c1edc',1,'lista.h']]]
+  ['libertarmatriz_0',['libertarMatriz',['../lista_8c.html#abe94e00aa30ceba08f4caabe9632ccad',1,'libertarMatriz(char **matriz, int linhas):&#160;lista.c'],['../lista_8h.html#abe94e00aa30ceba08f4caabe9632ccad',1,'libertarMatriz(char **matriz, int linhas):&#160;lista.c']]],
+  ['limparmatriz_1',['limparMatriz',['../lista_8c.html#a7dbed772efc94c6a42d52a29b2b679ac',1,'limparMatriz(char **matriz, int linhas, int colunas):&#160;lista.c'],['../lista_8h.html#a7dbed772efc94c6a42d52a29b2b679ac',1,'limparMatriz(char **matriz, int linhas, int colunas):&#160;lista.c']]],
+  ['lista_2',['lista',['../struct_caminho.html#ac29b8b2b4d37b1a7afaa3843a8ba7d08',1,'Caminho']]],
+  ['lista_2ec_3',['lista.c',['../lista_8c.html',1,'']]],
+  ['lista_2eh_4',['lista.h',['../lista_8h.html',1,'']]]
 ];

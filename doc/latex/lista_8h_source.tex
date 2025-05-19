@@ -1,5 +1,5 @@
 \doxysection{lista.\+h}
-\hypertarget{lista_8h_source}{}\label{lista_8h_source}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/lista.h@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/lista.h}}
+\hypertarget{lista_8h_source}{}\label{lista_8h_source}\index{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/src/lista.h@{C:/Users/PedroLourençoMoraisR/Desktop/Universidade/EDA/Projeto\_EDA\_23009\_Fase2/src/lista.h}}
 \mbox{\hyperlink{lista_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
@@ -24,26 +24,30 @@
 \DoxyCodeLine{00079\ }
 \DoxyCodeLine{00086\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{lista_8h_a79fd399db9519c94601c05922833492e}{detetarEfeitosNefastos}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
 \DoxyCodeLine{00087\ }
-\DoxyCodeLine{00093\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_ab4daf968b49d14c5639b57bcec8d5ebc}{imprimirAntenas}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
+\DoxyCodeLine{00093\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_ab81cb3d34b1e0b5ea40d4cecc818b715}{imprimirAntenas}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
 \DoxyCodeLine{00094\ }
-\DoxyCodeLine{00100\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a5c4a431732cfa1edd53e5380f36e692b}{imprimirEfeitosNefastos}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ lista);}
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_ab4d3c271f7c6ca0cf1b21f63d597504e}{imprimirEfeitosNefastos}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ lista);}
 \DoxyCodeLine{00101\ }
 \DoxyCodeLine{00108\ \textcolor{keywordtype}{char}**\ \mbox{\hyperlink{lista_8h_ae212239f368d0d6dc56b18fb3b329757}{carregarMatriz}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
 \DoxyCodeLine{00109\ }
-\DoxyCodeLine{00116\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a77484e72dda946869ea899022c71c498}{libertarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_abe94e00aa30ceba08f4caabe9632ccad}{libertarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
 \DoxyCodeLine{00117\ }
 \DoxyCodeLine{00129\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a8707b8a27cd57c2cb05a5072fbaa262c}{inserirNaMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ c);}
 \DoxyCodeLine{00130\ }
 \DoxyCodeLine{00141\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a9e6419cb7d67969125068034cb99be1e}{removerDaMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
 \DoxyCodeLine{00142\ }
-\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a2ef6c255d66772419bfbd2e3b89b7df0}{limparMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas);}
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a7dbed772efc94c6a42d52a29b2b679ac}{limparMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas);}
 \DoxyCodeLine{00151\ }
 \DoxyCodeLine{00162\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a504d49ba56f6ed032dab839e8230e478}{atualizarMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas,\ \textcolor{keywordtype}{int}\ colunas,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ lista,\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ efeitos);}
 \DoxyCodeLine{00163\ }
-\DoxyCodeLine{00170\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{lista_8h_a35e4bbf0bbc49e05b029f106feaa057e}{imprimirMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
+\DoxyCodeLine{00170\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_aabb6f52e8be061137ae11c7e2eaf50c8}{imprimirMatriz}}(\textcolor{keywordtype}{char}**\ matriz,\ \textcolor{keywordtype}{int}\ linhas);}
 \DoxyCodeLine{00171\ }
 \DoxyCodeLine{00178\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a46267c3e4103bcdfdab3672ec51f8cb5}{contarLinhas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
 \DoxyCodeLine{00179\ }
 \DoxyCodeLine{00186\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_adc98073390dd52bac718629e9434431b}{contarColunas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00194\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{lista_8h_a6f046a6c635bdbc0baba70e0e80b12a8}{guardarAntenasBin}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ficheiro,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ lista);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00201\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{lista_8h_a5c9ee51b54b0a1ea92c15608904a25c5}{carregarAntenasBin}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ficheiro);}
 
 \end{DoxyCode}

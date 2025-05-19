@@ -106,51 +106,11 @@ $(function(){initNavTree('dir_e8556165e99b7c004953a7b8dacb3e18.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="estrutura_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="estrutura_8h.html">estrutura.h</a></td></tr>
-<tr class="memdesc:estrutura_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPCA - Projeto de Estruturas de Dados. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="grafos_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>grafos.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8c.html">lista.c</a></td></tr>
-<tr class="memdesc:lista_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPCA - Projeto de Estruturas de Dados. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="lista_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html">lista.h</a></td></tr>
-<tr class="memdesc:lista_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPCA - Projeto de Estruturas de Dados. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="icondoc"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html">main.c</a></td></tr>
-<tr class="memdesc:main_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPCA - Projeto de Estruturas de Dados. <br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="subdirs" name="subdirs"></a>
+Directories</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="iconfclosed"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_c01e3eff8004351114291dac326d8836.html">src</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Descrição</h1>
-<p>Este repositório contém a implementação da <b>Fase 1</b> do projeto de avaliação da Unidade Curricular <b>Estruturas de Dados Avançadas (EDA)</b>, parte do 2º semestre do 1º ano no <b>IPCA, Barcelos</b>. <br  />
-</p>
-<p>O objetivo é aplicar conceitos de estruturas de dados dinâmicas em C, especificamente listas ligadas, para gerenciar antenas em uma cidade fictícia, detectar efeitos nefastos causados por interferências de frequência e exibir os resultados em formato tabular.</p>
-<p>O sistema carrega dados de um arquivo de texto (<code>antenas.txt</code>), permite inserção e remoção de antenas, calcula efeitos nefastos baseados em pares de antenas com a mesma frequência (onde uma está duas vezes mais distante da outra) e apresenta os resultados na consola. O projeto foi desenvolvido com modularização e documentação no formato Doxygen, conforme exigido no enunciado.</p>
-<p><b>Data de Entrega:</b> 30 de Março de 2025 Fase 1 <br  />
- <b>Autor:</b> Pedro Rocha</p>
-<hr  />
-<h1><a class="anchor" id="autotoc_md3"></a>
-Estrutura do Repositório</h1>
-<ul>
-<li><b><code><a class="el" href="estrutura_8h.html" title="IPCA - Projeto de Estruturas de Dados.">estrutura.h</a></code></b>: Definição das estruturas <code><a class="el" href="struct_antena.html" title="Estrutura que representa uma antena.">Antena</a></code> e <code><a class="el" href="struct_nefasto.html" title="Estrutura que representa um nefasto.">Nefasto</a></code> como listas ligadas.</li>
-<li><b><code><a class="el" href="lista_8h.html" title="IPCA - Projeto de Estruturas de Dados.">lista.h</a></code></b>: Declaração das funções para manipulação das listas e matriz.</li>
-<li><b><code><a class="el" href="lista_8c.html" title="IPCA - Projeto de Estruturas de Dados.">lista.c</a></code></b>: Implementação das funções, incluindo carregamento, inserção, remoção e detecção de efeitos.</li>
-<li><b><code><a class="el" href="main_8c.html" title="IPCA - Projeto de Estruturas de Dados.">main.c</a></code></b>: Programa principal que integra as funcionalidades e testa o sistema com <code>antenas.txt</code>.</li>
-<li><b><code>antenas.txt</code></b>: Arquivo de entrada com uma matriz 12x12 contendo antenas '0' e 'A'.</li>
-<li><b><code>README.md</code></b>: Este arquivo.</li>
-</ul>
-<hr  />
-<h1><a class="anchor" id="autotoc_md5"></a>
-Requisitos</h1>
-<ul>
-<li><b>Compilador C</b>: GCC ou equivalente (ex.: MinGW para Windows).</li>
-<li><b>Sistema Operacional</b>: Windows.</li>
-<li><b>Ferramentas</b>: Visual Studio Code (recomendado) com extensões Git para controlo de versão. </li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
