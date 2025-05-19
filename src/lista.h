@@ -90,14 +90,14 @@ Nefasto* detetarEfeitosNefastos(Antena* lista);
  * 
  * @param lista Lista de antenas.
  */
-void imprimirAntenas(Antena* lista);
+int imprimirAntenas(Antena* lista);
 
 /**
  * @brief Imprime a lista de efeitos nefastos.
  * 
  * @param lista Lista de efeitos nefastos.
  */
-void imprimirEfeitosNefastos(Nefasto* lista);
+int imprimirEfeitosNefastos(Nefasto* lista);
 
 /**
  * @brief Carrega a matriz de um ficheiro.
@@ -113,7 +113,7 @@ char** carregarMatriz(const char* filename);
  * @param matriz Matriz a libertar.
  * @param linhas Número de linhas da matriz.
  */
-void libertarMatriz(char** matriz, int linhas);
+int libertarMatriz(char** matriz, int linhas);
 
 /**
  * @brief Insere um caractere numa posição da matriz.
@@ -147,7 +147,7 @@ int removerDaMatriz(char** matriz, int linhas, int colunas, int x, int y);
  * @param linhas Número de linhas da matriz.
  * @param colunas Número de colunas da matriz.
  */
-void limparMatriz(char** matriz, int linhas, int colunas);
+int limparMatriz(char** matriz, int linhas, int colunas);
 
 /**
  * @brief Atualiza a matriz com as antenas e os efeitos nefastos.
@@ -167,7 +167,7 @@ int atualizarMatriz(char** matriz, int linhas, int colunas, Antena* lista, Nefas
  * @param matriz Matriz a imprimir.
  * @param linhas Número de linhas da matriz.
  */
-void imprimirMatriz(char** matriz, int linhas);
+int imprimirMatriz(char** matriz, int linhas);
 
 /**
  * @brief Conta o número de linhas de um ficheiro.

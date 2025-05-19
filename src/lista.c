@@ -192,7 +192,6 @@ int imprimirEfeitosNefastos(Nefasto* lista) {
  * @param linhas Número de linhas da matriz.
  */
 int libertarMatriz(char** matriz, int linhas) {
-    if (!matriz) return 0;
     for (int i = 0; i < linhas; i++) {
         free(matriz[i]);
     }
@@ -269,7 +268,6 @@ int removerDaMatriz(char** matriz, int linhas, int colunas, int x, int y) {
  * @return int 1 se a matriz foi limpa com sucesso.
  */
 int limparMatriz(char** matriz, int linhas, int colunas) {
-    if (!matriz) return 0;
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
             matriz[i][j] = '.';
@@ -345,7 +343,7 @@ int contarColunas(const char* filename) {
  * @param matriz Matriz a imprimir.
  * @param linhas Número de linhas da matriz.
  */
-void imprimirMatriz(char** matriz, int linhas) {
+int imprimirMatriz(char** matriz, int linhas) {
     printf("\n  MATRIZ\n");
     printf(" ----------\n\n");
     for (int i = 0; i < linhas; i++) {
