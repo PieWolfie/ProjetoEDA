@@ -35,9 +35,9 @@ int main() {
     else
     printf("Erro ao guardar antenas em binario.\n");
 
-    // Ler de volta do ficheiro binário (teste)
+    // Ler de volta do ficheiro binário
     Antena* listaBin = carregarAntenasBin("antenas.bin");
-    printf("\nAntenas lidas do ficheiro binário:\n");
+    printf("\nAntenas lidas do ficheiro binario:\n");
     imprimirAntenas(listaBin);
 
     // Construir grafo a partir da lista de antenas
