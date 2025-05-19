@@ -26,8 +26,19 @@
 int main() {
     // Carregar antenas da fase 1
     Antena* lista = carregarAntenas("antenas.txt");
-    printf("Antenas carregadas da Fase 1:\n");
-    imprimirAntenas(lista);
+    //printf("Antenas carregadas da Fase 1:\n");
+    //imprimirAntenas(lista);
+
+    // Guardar em binário
+    if (guardarAntenasBin("antenas.bin", lista))
+    printf("Antenas guardadas com sucesso em 'antenas.bin'.\n");
+    else
+    printf("Erro ao guardar antenas em binario.\n");
+
+    // Ler de volta do ficheiro binário (teste)
+    Antena* listaBin = carregarAntenasBin("antenas.bin");
+    printf("\nAntenas lidas do ficheiro binário:\n");
+    imprimirAntenas(listaBin);
 
     // Construir grafo a partir da lista de antenas
     Grafo* g = construirGrafo(lista);

@@ -184,3 +184,18 @@ int contarLinhas(const char* filename);
  * @return int Número de colunas do ficheiro.
  */
 int contarColunas(const char* filename);
+
+/**
+ * @brief Guarda a lista de antenas num ficheiro binário.
+ * @param ficheiro Nome do ficheiro a criar
+ * @param lista Lista ligada de antenas a guardar
+ * @return 1 em caso de sucesso, 0 caso contrário
+ */
+int guardarAntenasBin(const char* ficheiro, Antena* lista);
+
+/**
+ * @brief Carrega uma lista de antenas a partir de um ficheiro binário.
+ * @param ficheiro Nome do ficheiro binário
+ * @return Lista ligada de antenas carregadas ou NULL se falhar
+ */
+Antena* carregarAntenasBin(const char* ficheiro);

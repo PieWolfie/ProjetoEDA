@@ -346,3 +346,41 @@ void imprimirMatriz(char** matriz, int linhas) {
     }
     printf("\n------------\n");
 }
+
+/**
+ * @brief Liberta a memória alocada para a lista de antenas.
+ * @param lista Lista de antenas a libertar.
+ */
+int guardarAntenasBin(const char* ficheiro, Antena* lista) {
+    FILE* f = fopen(ficheiro, "wb");
+    if (!f) return 0;
+
+    for (Antena* a = lista; a; a = a->prox)
+        if (fwrite(a, sizeof(Antena), 1, f) != 1) {
+            fclose(f);
+            return 0;
+        }
+
+    fclose(f);
+    return 1;
+}
+
+Antena* carregarAntenasBin(const char* ficheiro) {
+    FILE* f = fopen(ficheiro, "rb");
+    if (!f) return NULL;
+
+    Antena* lista = NULL;
+    Antena temp;
+
+    while (fread(&temp, sizeof(Antena), 1, f) == 1) {
+        Antena* novo = malloc(sizeof(Antena));
+        if (!novo) break;
+        *novo = temp;
+        novo->prox = lista;
+        lista = novo;
+    }
+
+    fclose(f);
+    return lista;
+}
+
