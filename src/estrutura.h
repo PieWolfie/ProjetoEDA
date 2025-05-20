@@ -28,20 +28,4 @@ typedef struct Antena {
     struct Antena *prox;
 } Antena;
 
-/**
- * @brief Estrutura que representa um nefasto.
- * 
- * Cada nefasto possui coordenadas (x, y) e um apontador
- * para o próximo nefasto na lista.
- * 
- * @struct Nefasto
- * @param x Coordenada x do nefasto (inteiro não negativo).
- * @param y Coordenada y do nefasto (inteiro não negativo).
- * @param prox Apontador para o próximo nefasto na lista.
- */
-typedef struct Nefasto {
-    int x, y;
-    struct Nefasto *prox;
-} Nefasto;
-
 #endif
